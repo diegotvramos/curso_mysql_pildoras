@@ -1,0 +1,27 @@
+ Reglas de nombres de tablas y campos  
+
+
+ 
+ 
+
+Los nombres de tablas y campos 4D deben respetar las siguientes reglas:
+
+    El nombre puede tener hasta 31 caracteres.
+    Debe comenzar por una letra.
+    Puede contener combinaciones de letras, números, espacios y guiones bajos.
+    Los siguientes caracteres no se permiten en nombres de tablas (generan un error en el editor de estructura): ( ) + - / * " ; = & | # > < ^ ' { } % DIAMOND (0x00D7), CUBE (0x00B3), SQUARE (0x00B2), PLUS-MINUS (0x00B1)
+    Por lo general, debe evitar caracteres que puedan causar una mala interpretación en 4D o vía lenguajes externos, como signos de puntuación (comas, dos puntos, etc).
+    4D trunca los nombres de las tablas que superan los 31 caracteres y borra los espacios al principio o al final del nombre.
+    No utilice el mismo nombre para dos objetos visibles. Si utiliza el mismo nombre dos veces, una caja de diálogo de alerta le indicará que otro objeto visible ya tiene ese nombre y por lo tanto la entrada no es posible.
+    No utilice los nombres reservados para tablas o campos. Los nombres reservados incluyen los nombres de comandos (Fecha, Hora, etc.), palabras claves (If, For, etc.) y constantes.
+
+Recomendación: aunque es posible insertar espacios en los nombres de los objetos, introducir un nombre sin espacios le permitirá, en el editor de métodos, seleccionar el objeto haciendo doble clic directamente en él. Por lo tanto se recomienda utilizar un guión bajo en lugar de un espacio.
+
+Notas:
+
+    Se deben respetar reglas adicionales cuando los objetos deben manipularse vía el SQL: sólo se aceptan los caracteres _0123456789abcdefghijklmnopqrstuvwxyz, y el nombre no debe incluir palabras claves SQL (comando, atributo, etc.). El área "SQL" del Inspector le avisará si el nombre no cumple una regla SQL (ver Almacenado en registro, archivo de datos o fuera del archivo de datos). Puede visualizar las palabras reservadas de SQL en el Área de listas del editor de métodos. 
+
+    También debe asegurarse de utilizar caracteres que sean compatibles con JavaScript si desea acceder a sus tablas y campos desde una aplicación Wakanda por medio de un enlace 4D Mobile (Programming and Writing Conventions en la documentación Wakanda)
+
+https://doc.4d.com/4Dv15/4D/15.6/Reglas-de-nombres-de-tablas-y-campos.300-3836655.es.html
+CLIK EN FORMATO, AJUSTE DE LINEA.

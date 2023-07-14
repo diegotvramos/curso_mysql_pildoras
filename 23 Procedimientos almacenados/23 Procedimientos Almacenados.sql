@@ -1,0 +1,68 @@
+
+# procedimientos almacenados
+use pildoras;
+
+create procedure muestra_clientes()
+select * from clientes where poblacion= 'madrid';
+# LLAMADA AL PROCEDIMIENTO DESDE UNA APLICACION O DESDE LA MISMA CONSOLA SQL
+
+CALL MUESTRA_CLIENTES();
+
+# AHORA VAMOS A CREAR UN PROCEDIMIENTO ALMACENADO QUE RECIBA PARAMETROS
+
+CREATE PROCEDURE ACTUALIZA_PRODUCTOS(N_PRECIO DECIMAL(10,2), CODIGO VARCHAR(5) )
+UPDATE PRODUCTOS SET PRECIO = N_PRECIO WHERE CÓDIGOARTÍCULO= CODIGO;
+
+CALL ACTUALIZA_PRODUCTOS(60,'AR22');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
